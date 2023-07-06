@@ -24,6 +24,7 @@
 let playing = false;
 let score;
 let trialsLeft;
+let fruits = ["apple", "banana", "orange", "cherries", "jackfruit", "lemon", "mango", "peach", "pear", "pineApple", "pomegranate", "strawberry", "watermelon"];
 
 $(function() {
     // click on start/reset button
@@ -46,6 +47,9 @@ $(function() {
 
             //change button text to reset game
             $("#start-reset").html("Reset Game");
+
+            //start sending fruits
+            startAction();
         }
     });
 
@@ -60,3 +64,18 @@ function addHearts(trialsLeft) {
         $("#trialsLeft").append(" ❤️ ");
     }
 }
+
+// start sending fruits
+function startAction() {
+    $("#fruit1").show();
+    chooseFruit(); //choose a random fruit
+    //choose a random position
+    $("#fruit1").css({'left': Math.round(Math.random()*550), 'top': -50});
+}
+
+// generate a random fruit
+
+function chooseFruit() {
+    $("#fruit1").attr("src", "images/" + fruits[Math.floor(Math.random()*13)] + ".png"); 
+}
+
