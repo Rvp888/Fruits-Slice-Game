@@ -122,7 +122,7 @@ html {
     display: none;
 }
 
-#gameover {
+#gameOver {
     height: 200px;
     width: 500px;
     background: linear-gradient(#f3ca6b, #f3706c);

@@ -112,7 +112,9 @@ function startAction() {
                 //show Game Over box
                 $("#gameOver").show();
                 $("#gameOver").html("<P>Game Over!</P><P>Your score is "+ score + "</P>");
-
+                //hide trialsLeft box
+                $("#trialsLeft").hide();
+                //stop dropping fruits
                 stopAction();
             }
         }
@@ -126,6 +128,8 @@ function chooseFruit() {
     $("#fruit1").attr("src", "images/" + fruits[Math.floor(Math.random()*13)] + ".png"); 
 }
 
+//stop dropping fruits
 function stopAction() {
     clearInterval(action);
+    $("#fruit1").hide();
 }
