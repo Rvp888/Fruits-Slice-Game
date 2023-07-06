@@ -132,10 +132,10 @@ html {
     text-align: center;
     text-transform: uppercase;
     position: absolute;
-    top: 100px;
-    left: 45px;
+    top: 170px;
+    left: 145px;
     z-index: 1;
-    display: none;
+    /* display: none; */
 }
 
 
