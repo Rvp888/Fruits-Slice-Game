@@ -110,16 +110,13 @@ html {
     position: relative;
 }
 
-#time-remaining {
-    width: 152px;
+#trialsLeft {
+    width: 80px;
     padding: 10px;
     position: absolute;
-    top: 395px;
-    left: 400px;
-    background-color: rgba(181, 235, 36, 0.8);
+    background-color: #f1ff92;
     border-radius: 3px;
     box-shadow: 0 4px rgba(0, 0, 0, 0.2);
-    /* visibility: hidden; */
     display: none;
 }
 
@@ -135,7 +132,7 @@ html {
     top: 170px;
     left: 145px;
     z-index: 1;
-    /* display: none; */
+    display: none;
 }
 
 
