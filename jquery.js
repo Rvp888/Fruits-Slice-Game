@@ -71,16 +71,20 @@ $(function () {
 
   //slicing fruit
   $("#fruit1").mouseover(function () {
+
     score++;
     //update score
     $("#scoreValue").html(score);
     //play sound
-    document.getElementById("sliceSound").play();
+    // document.getElementById("sliceSound").play();
     $("#sliceSound")[0].play();
-    //stop fruit and hide it
-    stopAction();
+    //stop fruit 
+    clearInterval(action);
+    //hide fruit
+    $("#fruit1").hide("explode", 500);//slice fruit
     //send new fruit
-    startAction();
+    setTimeout(startAction, 800);
+    
   });
 
   // Functions:
