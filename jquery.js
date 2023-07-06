@@ -42,10 +42,18 @@ $(function() {
             //show trials left
             $("#trialsLeft").show();
             trialsLeft = 3;
-            for(let i = 0; i < trialsLeft; i++) {
-                $("#trialsLeft").append(" x ");
-            }
+            addHearts(trialsLeft);
         }
     });
 
 });
+
+
+
+// Functions:
+
+function addHearts(trialsLeft) {
+    for(let i = 0; i < trialsLeft; i++) {
+        $("#trialsLeft").append(" x ");
+    }
+}
