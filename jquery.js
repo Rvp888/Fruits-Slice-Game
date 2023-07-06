@@ -43,6 +43,9 @@ $(function() {
             $("#trialsLeft").show();
             trialsLeft = 3;
             addHearts(trialsLeft);
+
+            //change button text to reset game
+            $("#start-reset").html("Reset Game");
         }
     });
 
@@ -54,6 +57,6 @@ $(function() {
 
 function addHearts(trialsLeft) {
     for(let i = 0; i < trialsLeft; i++) {
-        $("#trialsLeft").append(" x ");
+        $("#trialsLeft").append(" ❤️ ");
     }
 }
