@@ -77,6 +77,10 @@ $(function () {
     //play sound
     document.getElementById("sliceSound").play();
     $("#sliceSound")[0].play();
+    //stop fruit and hide it
+    stopAction();
+    //send new fruit
+    startAction();
   });
 
   // Functions:
